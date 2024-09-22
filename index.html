@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        canvas {
+            border: 1px solid #2980b9;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #2980b9;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        #errorMessage {
+            color: red;
+            margin-top: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicativo de Logo para o Time Fezes Furiosas</h1>
+    <img src="https://cdn.discordapp.com/attachments/770446419291013170/1281475535490256990/limpo.png?ex=66f049d8&is=66eef858&hm=8c16ea7db5baecf7ed0bcf2c3053540c641c64e6b7d082c9139d099a0717ff67&" alt="Logo Fezes Furiosas">
+    <p>Este site serve para você que é do time Fezes Furiosas, para adicionar a logo na sua foto!</p>
+    <p>Frase do time: "Fezes Furiosas: 𝑎 𝑣𝑖𝑡𝑜́𝑟𝑖𝑎 𝑒́ 𝑛𝑜𝑠𝑠𝑎 𝑜 𝑐ℎ𝑒𝑖𝑟𝑜 𝑒́ 𝑑𝑒𝑙𝑒𝑠!"</p>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <select id="positionSelect">
+        <option value="top-left">Canto Superior Esquerdo</option>
+        <option value="top-right">Canto Superior Direito</option>
+        <option value="bottom-left">Canto Inferior Esquerdo</option>
+        <option value="bottom-right">Canto Inferior Direito</option>
+        <option value="center">Centro</option>
+    </select>
+    <button id="downloadBtn">Baixar Imagem com Logo</button>
+    
+    <div id="errorMessage"></div>
+    
+    <canvas id="canvas"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
