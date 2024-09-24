@@ -5,8 +5,8 @@ const logo = new Image();
 const downloadBtn = document.getElementById('downloadBtn');
 const positionSelect = document.getElementById('positionSelect');
 
-// Carregar o logotipo
-logo.src = "https://i.imgur.com/uUQ7Gf5.png";
+// Carregar o logotipo do repositório GitHub
+logo.src = "https://raw.githubusercontent.com/walissonhsantos/fezesfuriosaslogo/refs/heads/main/limpo.png";
 
 let baseImage = null;  // Imagem base carregada pelo usuário
 
