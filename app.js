@@ -6,7 +6,7 @@ const downloadBtn = document.getElementById('downloadBtn');
 const positionSelect = document.getElementById('positionSelect');
 
 // Carregar o logotipo
-logo.src = "https://cdn.discordapp.com/attachments/770446419291013170/1281475535490256990/limpo.png?ex=66f049d8&is=66eef858&hm=8c16ea7db5baecf7ed0bcf2c3053540c641c64e6b7d082c9139d099a0717ff67&";
+logo.src = "https://i.imgur.com/uUQ7Gf5.png";
 
 let baseImage = null;  // Imagem base carregada pelo usuário
 
